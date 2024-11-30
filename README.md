@@ -37,7 +37,9 @@ GasUtility/
 │   │       ├── home.html 
 |   |       ├── submit_request.html  # Templates
 │   │       ├── thanks.html
-│   │       └── track_request.html   
+│   │       └── track_request.html
+│   ├── migrations/
+│   │   └── ...
 |   ├── urls.py                      # URL Mapping
 |   ├── admin.py                     # Manage Admin Interface 
 |   ├── apps.py                      # Configure app
