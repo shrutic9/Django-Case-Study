@@ -18,3 +18,23 @@ Manage Requests:
 
 Update the status of requests (Pending, In Progress, Resolved).
 Admin Dashboard:
+
+GasUtilityApp/
+│
+├── gasutility/          # Main project settings
+│   ├── settings.py
+│   ├── urls.py
+│   └── ...
+│
+├── service_requests/    # Core app for service requests
+│   ├── models.py        # Database models
+│   ├── views.py         # Application views
+│   ├── forms.py         # Form definitions
+│   ├── templates/
+│   │   └── service_requests/
+│   │       ├── submit_request.html
+│   │       ├── thanks.html
+│   │       ├── track_request.html
+│   └── ...
+│
+└── manage.py            # Django management script
