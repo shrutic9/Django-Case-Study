@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Service Request</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Submit a Service Request</h1>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="mb-3">
+                {{ form.customer_name.label_tag }}
+                {{ form.customer_name }}
+            </div>
+            <div class="mb-3">
+                {{ form.email.label_tag }}
+                {{ form.email }}
+            </div>
+            <div class="mb-3">
+                {{ form.request_type.label_tag }}
+                {{ form.request_type }}
+            </div>
+            <div class="mb-3">
+                {{ form.description.label_tag }}
+                {{ form.description }}
+            </div>
+            <div class="mb-3">
+                {{ form.attachment.label_tag }}
+                {{ form.attachment }}
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

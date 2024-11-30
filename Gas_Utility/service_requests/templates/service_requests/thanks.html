@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5 text-center">
+        <h1>Thank You!</h1>
+        <p>Your service request has been successfully submitted.</p>
+        <p>**Your Request ID is <strong>{{ request_id }}</strong>.**</p>
+        <a href="/requests/track/{{ request_id }}/" class="btn btn-info">Track Your Request</a>
+        <a href="/requests/submit/" class="btn btn-secondary">Submit Another Request</a>
+    </div>
+</body>
+</html>
