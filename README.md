@@ -7,8 +7,8 @@ The solution aims to reduce wait times and streamline customer service operation
 ## Features
 ### 1. For Customers:
 Submit Service Requests:
-
 Select the type of service.
+
 Track Service Requests:
 View the status of submitted requests.
 Check the submission date and resolution date.
@@ -29,17 +29,18 @@ GasUtility/
 │   └── ...
 │
 ├── service_requests/   
-│   ├── models.py        # Database models
-│   ├── views.py         # Application views
-│   ├── forms.py         # Form definitions
+│   ├── models.py                    # Database models
+│   ├── views.py                     # Application views
+│   ├── forms.py                     # Form definitions
 │   ├── templates/
 │   │   └── service_requests/
-│   │       ├── submit_request.html
+│   │       ├── home.html 
+|   |       ├── submit_request.html  # Templates
 │   │       ├── thanks.html
-│   │       ├── track_request.html
-|   ├── urls.py          # URL Mapping
-|   ├── admin.py         # Manage Admin Interface 
-|   ├── apps.py          # Configure app
+│   │       └── track_request.html   
+|   ├── urls.py                      # URL Mapping
+|   ├── admin.py                     # Manage Admin Interface 
+|   ├── apps.py                      # Configure app
 │   └── ...
 │
 ├── db.sqlite3           # DB
